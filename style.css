@@ -1,34 +1,73 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300&family=Work+Sans:wght@300&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
-header{
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: grey;
-    height: 130px;
+    background-color: white;
+    height: 100px;
 }
 
-img{
+body {
+    background-image: url('https://cloudfront-us-east-1.images.arcpublishing.com/radiomitre/4UQZLLOC7ZCLZEE4NEMLOH5UZY.jpg');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 485px;
+}
+
+img {
     width: 130px;
     height: 130px;
 }
-nav{
-    font-style: revert;
-    font-family: sans-serif;
+
+nav {
     font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
 }
-ul{
+
+ul {
     display: flex;
     flex-direction: row;
     align-content: center;
     list-style: none;
 }
 
-a{
-    margin: 10px;
+li a {
+    color: rgb(0, 0, 0);
     cursor: pointer;
+    padding: 10px;
+}
+
+li a:hover {
+    color: rgb(252, 181, 49);
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+}
+
+
+/* class */ 
+
+.promocion{
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 600px;
 }
