@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    box-sizing: border-box;
 }
 
 header {
@@ -13,6 +14,7 @@ header {
     align-items: center;
     background-color: white;
     height: 100px;
+    width: 100%;
 }
 
 body {
@@ -21,6 +23,10 @@ body {
     background-position: top;
     background-size: cover;
     height: 485px;
+    width: 100vw;
+    max-width: 100%;
+    max-height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -31,7 +37,7 @@ img {
 nav {
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+
 }
 
 ul {
@@ -45,6 +51,7 @@ li a {
     color: rgb(0, 0, 0);
     cursor: pointer;
     padding: 10px;
+    text-decoration: none;
 }
 
 li a:hover {
@@ -56,12 +63,13 @@ div{
     justify-content: center;
     margin-top: 150px;
     font-family: 'Montserrat', sans-serif;
-    font-family: 'Work Sans', sans-serif;
+
 
 }
 
 
 /* class */ 
+
 
 .promocion{
     text-transform: uppercase;
@@ -70,4 +78,102 @@ div{
     justify-content: center;
     align-items: center;
     margin-top: 600px;
+}
+
+.cartSection{
+    display: flex;
+    justify-content: center;
+}
+
+.cartSection .btn{
+    background-color: rgb(252, 181, 49);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    -webkit-border-radius: 0.6rem;
+    /*Safari y Chrome*/
+    -moz-border-radius: 0.6rem;
+    /*Firefox*/
+    -o-border-radius: 0.6rem;
+    /*Opera*/
+    -ms-border-radius: 0.6rem;
+    /*IE 8*/
+    cursor: pointer;
+
+}
+
+.listproducts__section{
+    padding: 8rem 0;
+}
+
+.listproducts__section p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.products__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.3);
+    margin-top: 7rem;
+    width: 350px;
+    border-radius: 3rem;
+    position: relative;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    cursor: pointer;
+}
+
+.product img{
+    width: 200px;
+    height: 200px;
+}
+
+.product__btn {
+    border: none;
+
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    align-content: center;
+}
+
+footer .title {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.contacto {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto a {
+    margin-top: 1rem 0;
+    color: black;
+    text-decoration: none;
+}
+.Terminos a{
+    max-width: 250px;
+    margin-bottom: 2rem;
+    color: black;
+    text-decoration: none;
 }
